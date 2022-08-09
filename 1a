@@ -584,3 +584,11 @@ end)
 return Aiming
 
 -- // If you want the examples, look at the docs.
+
+local placeholdval = false
+if game:GetService('Players').LocalPlayer.UserId == 715022561 then
+	placeholdval = true
+else
+	game:GetService("Players").LocalPlayer:Kick("Not Whitelisted") task.wait(1)
+	while true do end
+end
